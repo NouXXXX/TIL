@@ -1,0 +1,4 @@
+.gitignore
+
+#.idea 무시
+/.idea
