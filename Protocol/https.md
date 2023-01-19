@@ -34,3 +34,7 @@ HTTP 서버는 기본 포트인 80번 포트에서 서비스 대기중이며, �
 * 공개키보다 빠르게 통신할 수 있다.
 
 이러한 SSL 방식을 적용하려면 인증서를 발급받아 서버에 적용시켜야 한다. 인증서는 사용자가 접속한 서버가 우리가 의도한 서버가 맞는지를 보장하는 역할을 한다. 인증서를 발급하는 기관을 CA(Certificate Authority)라고 부른다. 공인인증기관의 경우 웹 브라우저는 미리 CA 리스트와 함께 각 CA의 공개키를 알고 있다.
+
+> ### CA(Certificate Authority)란?
+> certification authority (CA)는 공개키와 공개 DNS명(ex)www.example.com)의 연결을 보장하는 기관이다.
+> 예를 들어 클라이언트가 `www.example.com`의 공개키가 이 공개키인지 어떻게 알 수 있는가?
