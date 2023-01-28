@@ -14,3 +14,7 @@
 > 그다음에 그 데이터를 요청하면 `메인 DB`에서 보여주는것이 아니라 `redis`에서 꺼내서 보여주는 경우가 있고 그러면 더 빠른 서비스를 만들수 있다.
 > ![](https://i.gyazo.com/e87ed043ab3cc048ca04a1131bdc94ab.png) <br />
 > 따라서 `Key-value Database`는 **자주쓰는 데이터 캐싱, 채팅을 위한 pub/sub, 영상 스트리밍, 로그인기록저장 등등**에 사용이 된다.
+
+## 2. Relational Database
+
+>
