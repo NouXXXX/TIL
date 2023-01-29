@@ -17,4 +17,6 @@
 
 ## 2. Relational Database
 
->
+> 엑셀처럼 생긴 데이터베이스이다. <br/>
+> 대표적으론 
+> ![](https://i.gyazo.com/ed656fb82505689b790ecf1cb985de6d.png)
