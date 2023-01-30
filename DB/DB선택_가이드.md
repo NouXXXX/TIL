@@ -18,5 +18,9 @@
 ## 2. Relational Database
 
 > 엑셀처럼 생긴 데이터베이스이다. <br/>
-> 대표적으론 
-> ![](https://i.gyazo.com/ed656fb82505689b790ecf1cb985de6d.png)
+> ![](https://i.gyazo.com/ed656fb82505689b790ecf1cb985de6d.png) <br/>
+> 대표적으론 `MariaDB, MySQL, ORACLE, PostgreSQL 등등`이 있다.<br/>
+> ![](https://i.gyazo.com/40bf8d72bfb6bc0bc8eb8662ff7bfe47.png) <br />
+> 또한 이 관계형 DB는 다양한 곳에서 사용될 수 있어서 DB 점유율에서도 높은 위치에 있다. <br />
+> ![](https://cdn-icons-png.flaticon.com/512/4492/4492311.png) <br/>
+> 그리고 이러한 관계형 DB는 `SQL(Structured Query Language)`이라는 DB 문법을 사용해야한다. <br/>
