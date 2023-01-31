@@ -24,3 +24,14 @@
 > 또한 이 관계형 DB는 다양한 곳에서 사용될 수 있어서 DB 점유율에서도 높은 위치에 있다. <br />
 > ![](https://cdn-icons-png.flaticon.com/512/4492/4492311.png) <br/>
 > 그리고 이러한 관계형 DB는 `SQL(Structured Query Language)`이라는 DB 문법을 사용해야한다. <br/>
+> 그런데 이 `SQL`이라는 걸 사용하게 되면 `데이터 정규화`라는 것을 자주보게 되는데 `데이터 정규화는 중복이 되는 내용은 다른 테이블로 빼서 중복을 제거하는 것이다.` <br/>
+> 또한 `데이터 정규화는 입출력을 할때 출력문법이 많이 복잡해지게 되는 단점이 있다.` <br/>
+> 또한 기본적으로 `트렌젝션 (ACID Transaction)기능`이 있어서 돈을 거래하는 기능을 만들때 안전하게 구현이 가능하다. <br/>
+> ![](https://www.databricks.com/wp-content/uploads/2021/02/delta-lake-1-min.png) <br/>
+> 따라서 `입출력의 속도보단 정확도가 더 중요한 서비스라면 일반적으로 관계형 DB를 사용하는 경우가 많다.`
+> > ### 추가 설명
+> > 많은 사람들이 관계형 DB의 이름 때문에 `관계`를 더 잘 표현한다라고 생각하는데 사실은 수학용어중에 행렬을 배울 때 사용하는 `relation`에서 기인되었다. <br/>
+> > ![](https://i.gyazo.com/6090d8a1d58d28d01baf54203e4b0998.png) <br/>
+> > **따라서 Relational Database는 관계를 중점으로 다루기엔 어려운점이 많다. 만약 이 `관계`를 주로 DB에 저장하고 싶다면 `Graph Database`를 사용해야 한다.**
+
+## 3. Graph Database
