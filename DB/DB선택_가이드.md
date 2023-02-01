@@ -35,3 +35,37 @@
 > > **따라서 Relational Database는 관계를 중점으로 다루기엔 어려운점이 많다. 만약 이 `관계`를 주로 DB에 저장하고 싶다면 `Graph Database`를 사용해야 한다.**
 
 ## 3. Graph Database
+
+> 위에서 말했듯이 `관계`를 주로 DB에 저장하고 싶다면 사용하는 DB이다.<br/>
+> 대표적으로는 `*Sparsity, neo4j, OrientDB, ArangoDB`등이 있다. <br/>
+> 그중에서도 가장많이 사용하는 `neo4j`에 대해 알아보자 <br/>
+> ![](https://upload.wikimedia.org/wikipedia/commons/e/e5/Neo4j-logo_color.png) <br/>
+> `neo4j`는 아래와 같이 구성이 된다.
+> 
+> `node`라는 것을 만들고 이 `node`라는 것 안에 데이터들을 저장할 수 있는데 여기서 중요한건 `node`끼리 어떤 관계인지 기록을 해둘 수 있다. <br/>
+> 또한 이러한 Graph Database를 입출력 할때는 GQL(Graph Query Language)를 사용해야 한다. <br/>
+> ![](https://user-images.githubusercontent.com/38887077/75741240-f5ba2d80-5d44-11ea-80f6-f44d39fff43a.png) <br/>
+> 이걸 사용하게 되면 방향, 관계 이런 것들이 표현 가능한데 기업에서는 이러한 `Graph Database`를 대표적으로는 `비행기 노선, SNS 친구관계, 코로나전염맵, 추천 서비스 등`에 사용을 많이한다.
+
+## 4. Document Database
+
+> `Graph Database`처럼 특수한 케이스 말고 일반적인 상황에서 사용하는 DB를 사용하고 싶다면 `Relational Database`를 사용하면 되는데 `Relational Database`보다 좀더 자유로운 DB를 사용하고 싶다면 `Document Database`를 사용하면 된다. <br/>
+> 대표적으로는 `mongoDB, CouchDB, Cloud Firestore등`이 있다. <br/>
+> 이 DB들의 원리에 대해서 알아보자 `Document Database`는 `collection`이라는 폴더를 하나 만들고 그 안에 `document`라는 것을 생성해서 `document` 안에 JSON 형태로 데이터를 저장 할 수 있게 되어있다. <br/>
+> ![](https://i.gyazo.com/6785f50be7579aaef4b9dbdbc2348e2c.png) <br/>
+> 이걸 사용하면 어떤 데이터를 저장하게 될지 미리 `정의`해놓을 필요가 없고 갑자기 구조가 바뀌어도 에러가 발생하지 않는다. 가장 큰 특징은 중복된 데이터를 제거하지 않는다. 한마디로 정규화를 하지 않는다. 따라서 데이터 입출력문이 메우 간단하다. <br/>
+> 또한 데이터 분산처리를 매우 잘해주어서 `SNS, 실시간 채팅, 게시판, 온라인게임 등`에 주로 활용하는 경우가 있다. <br/>
+> ![](https://i.gyazo.com/b503e5a496622bb85c138626625329b5.jpg) <br/>
+> 다만 분산처리를 하게 되면 `일관성, 정확도`가 떨어질수 있다.
+
+## 5. Column-family Database
+
+> 만약 관계형 DB처럼(like excel) 사용하고 싶은데 좀 더 유연하게 사용하고 싶다 라고 하면 `Column-family Database`를 쓰면 된다.<br/>
+> 대표적으로는 `cassandra, APACHE HBASE, Google Cloud Bigtable 등`이 있다. <br/>
+> 이러한 DB도 똑같이 `table`을 하나 만들고 `row`를 만들고 `row`에 `column`을 만들어서 데이터를 넣을 수 있다. <br/>
+> ![](https://i.gyazo.com/6aaec5105dd003e1eae334caabfb5b87.png) <br/>
+> 다만 이러한 DB에 입출력을 하기 위해선 `SQL`이 아니라 그 회사에서 만든 언어를 사용해야 한다. cassandra의 경우에는 CQL(Cassandra Query Language)를 사용한다. (사실 SQL이랑 큰차이 없음) <br/>
+> ![](https://cdn.educba.com/academy/wp-content/uploads/2019/11/Cassandra-Query-Language.png)<br/>
+> 그리고 이러한 DB들은 `정규화없이 쓰는게 일반적`이다. 따라서 입출력문이 쉽고 `복제,분산 처리`를 잘한다.<br/>
+> `많은 입출력`을 감당해야 하는 서비스에 사용된다. (복제해놓으면 단점 : 데이터 일관성 부족) <br/>
+> 또한 데이터를 저장할때 `시간 기록을 쉽게 해주는 기능`이 있어서 많이 사용된다 (대표적으론 Netflix)
