@@ -69,3 +69,27 @@
 > 그리고 이러한 DB들은 `정규화없이 쓰는게 일반적`이다. 따라서 입출력문이 쉽고 `복제,분산 처리`를 잘한다.<br/>
 > `많은 입출력`을 감당해야 하는 서비스에 사용된다. (복제해놓으면 단점 : 데이터 일관성 부족) <br/>
 > 또한 데이터를 저장할때 `시간 기록을 쉽게 해주는 기능`이 있어서 많이 사용된다 (대표적으론 Netflix)
+
+## 6. Search Engine
+
+> 검색용 `index`를 보관하기 위한 DB도 있다. `elastic, Amazon CloudSearch, Google Cloud Search`가 대표적이다. <br/>
+> 검색용 DB라고 해도 `일반적인 DB로 사용이 가능`하다. 그래도 `index 보관에 특화`되어 있어 `index`보관용으로 주로 사용된다. <br/>
+> `index`란 `빠른 검색을 도와주는 목차와 같은 것`입니다.<br/>
+> ![](https://i.gyazo.com/e1c374990deda8550babeb7e7b0a2528.png) <br/>
+> 원리는 평소에 쓰던 `DB에서 데이터를 뽑아서 입력`을 하면 `index`를 생성하고 보관해주는 역할을 한다. <br/>
+> 따라서 검색 요청이 들어오면 `index`를 이용해서 되게 쉽게 자료 검색을 도와준다.<br/>
+> 또한 `Search Engine`을 사용하면 `실시간 검색어, 추천 검색어, 검색어 오타교정` 서비스를 만들기 쉽다.
+
+## 📌 요약
+> ### 일반적인 용도로는
+> - Relational Database
+> - Document Database
+> ---
+> ### 입출력이 매우 잦으면
+> - Document Database가 일반적
+> ---
+> ### 정확도와 일관성이 중요하면
+> - Relational Database가 일반적 (확장 방법에 따라 아닐 수도 있음)
+
+### 📎 참고 자료
+> https://www.youtube.com/watch?v=ZVuHZ2Fjkl4
